@@ -1,0 +1,23 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+.order_header{
+	word-spacing: 10px;
+}
+.order_detail{
+	float:left;
+	width: 40%;
+	word-spacing: 10px;
+	}
+.list{
+	
+	float:right;
+	width:48%;
+	word-spacing: 50px;
+}
+.btns{
+	float:left;
+	width: 100%;
+	word-spacing: 50px;
+}

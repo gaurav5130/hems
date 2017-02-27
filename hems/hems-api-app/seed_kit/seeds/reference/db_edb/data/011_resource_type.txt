@@ -1,0 +1,4 @@
+C1,E1,resource_type,Consumable,Consumable Item
+C1,E1,resource_type,Rentable,Rentable Item
+C1,E1,resource_type,Single Room A/C, Single Room A/C
+C1,E1,resource_type,Double Room A/C, Double Room A/C

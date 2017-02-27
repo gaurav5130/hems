@@ -1,0 +1,6 @@
+._error_hidden {
+	@extend .hidden;
+}
+._auth {
+	@extend .hidden;
+}

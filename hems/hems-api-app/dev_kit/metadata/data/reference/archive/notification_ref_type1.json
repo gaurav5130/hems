@@ -1,0 +1,34 @@
+{
+	"notification": {
+		"header": {
+			"title": "Notification",
+			"description": "Upload Refereneces",
+			"category":"backend",
+			"overridden_fields": false,
+			"additional_fields": true
+		},
+		"ref_fields": {},
+		"additional_fields": {
+			"sleeptime": {
+				"title":"Sleep Time",
+				"fld_desc": "sleep time",
+				"fld_type": "integer",
+				"fld_size": 5,
+				"sequence": 3,
+				"validation": "",
+				"editable": false,
+				"default_val": "5"
+			},
+			"dbconn": {
+				"title":"DB Connexn",
+				"fld_desc": "DB Connection",
+				"fld_type": "string",
+				"fld_size": 100,
+				"sequence": 3,
+				"validation": "",
+				"editable": false,
+				"default_val": ""
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-lg-12">
+        <%= yield :page_header %>
+    </div>
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <%= render "webui/shared/page_flash" %>
+    </div>
+</div>
+<!-- /.row -->
+
+<%= yield :page_body %>

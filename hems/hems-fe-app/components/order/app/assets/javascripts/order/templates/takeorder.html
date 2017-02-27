@@ -1,0 +1,94 @@
+<div class="row">
+    <div class="col-lg-12">
+		<h4 align="center">
+		    <strong>KOT/BOT</strong>
+		</h4>
+    </div>
+</div>
+
+<div class="row _info_hidden">
+    <div class="col-lg-12"> 
+		<div class="alert alert-dismissable" id="_info_div">
+		  	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<i class="fa fa-info-circle"></i>&nbsp;<span class="_info_span"></span>
+		</div>
+    </div>
+</div>
+
+<form class= 'form-horizontal'>
+
+<div class="row">
+  <div class="col-lg-12">
+      <div class="form-group">
+        <label for="facility_code"><strong>RESTAURANT NAME:</strong></label>
+		<select class="selectpicker" id="facility_code" ng-model="form.facility_code" required>
+			<option ng-repeat="x in facility" value={{x.facility_code}}>{{x.facility_name}}</option>
+		</select>
+      </div>
+   </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+      <div class="form-group">
+		<label for="table_number"><strong>Table No:</strong></label>
+		<input type="text" size="6" ng-model="form.table_number" id="table_number" required>
+
+		<label for="member_id"><strong>Member ID:</strong></label>
+		<input type="text" size="7" ng-model="form.member_id" id="member_id" required>
+		<button type="button" class="btn btn-info">Scan</button>
+
+		<label for="steward"><strong>Steward:</strong></label>
+		<input type="text" size="21" ng-model="form.steward" id="steward">
+
+		<label for="waitor"><strong>Waitor:</strong></label>
+		<input type="text" size="21" ng-model="form.waitor" id="waitor">
+      </div>
+   </div>
+</div>
+
+
+<div class="row">
+	<div class="col-lg-6">
+	    <div class="table-responsive">
+	        <table class="table table-hover">
+	            <thead>
+	                <tr>
+						<th>#</th>
+						<th>Item</th>
+						<th>Quantity</th>
+						<th>Unit</th>
+						<th>Price</th>
+						<th></th>
+	                </tr>
+	            </thead>
+
+				<tbody>
+					  <tr ng-repeat="n in [] | range:8">
+						<td>{{n+1}}</td>
+						<td><input type="text" size="25" ng-model="form.item_name[n]"></td>
+						<td><input type="text"  size="4" ng-model="form.quantity[n]" value={{n.itemname}}></td>
+						<td><input type="label" size="4" ng-model="form.unit[n]"></td>
+						<td><input type="label" size="4" ng-model="form.price[n]"></td>
+						<td><a><img src='/assets/order/delete.jpg' height='14px' width='30px'></a></td>
+					  </tr>					 
+				</tbody>
+	        </table>
+	    </div>
+	</div>
+	<div class="col-lg-6">
+		<button type="button" class="btn btn-primary" size="6" >TABLE</button>
+		<button type="button" class="btn btn-primary" size="6">ITEM</button>
+		<button type="button" class="btn btn-primary" size="6" >STEWARD</button>
+		<button type="button" class="btn btn-primary" size="6">WAITOR</button>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-6">
+      <input type="submit" ng-click="saveOrder();" id="btnSubmit" value="Save Order" class="btn btn-primary" data-disable-with="Save Order" />
+	  <a class="btn btn-primary" href="/bill/prepare#/?member_id={{form.member_id}}&facility_code={{form.facility_code}}">Prepare Bill</a>
+	</div>
+</div>
+
+</form>

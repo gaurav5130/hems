@@ -1,0 +1,16 @@
+{
+  "name": "dsl-generated-dependencies",
+  "dependencies": {
+    "bootstrap-sass-official": "latest",
+    "jquery": "latest",
+    "jquery-ujs": "latest",
+    "jquery-ui": "latest",
+    "angular": "~> 1.5",
+    "angular-route": "latest",
+    "angular-resource": "latest",
+    "angular-filter": "latest"
+  },
+  "resolutions": {
+    "angular": "1.5"
+  }
+}

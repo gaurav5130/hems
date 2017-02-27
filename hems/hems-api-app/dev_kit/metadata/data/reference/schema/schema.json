@@ -1,0 +1,94 @@
+{
+	"definitions": {
+		"header": {
+			"type": "object",
+			"properties": {
+				"title": {
+					"type": "string",
+					"maxLength": 50
+				},
+				"description": {
+					"type": "string",
+					"maxLength": 200
+				},
+				"category": {
+					"type": "string",
+					"maxLength": 50
+				},
+				"overridden_fields": {
+					"type": "boolean"
+				},
+				"additional_fields": {
+					"type": "boolean"
+				}
+			}
+		},
+		"fields": {
+			"type": "object",
+			"properties": {
+				"title": {
+					"type": "string",
+					"maxLength": 50
+				},
+				"fld_desc": {
+					"type": "string",
+					"maxLength": 200
+				},
+				"fld_type": {
+					"type": "string",
+					"maxLength": 50
+				},
+				"fld_size": {
+					"type": "number",
+					"maxLength": 5
+				},
+				"sequence": {
+					"type": "number",
+					"maxLength": 2
+				},
+				"validation": {
+					"type": "string",
+					"maxLength": 200
+				},
+				"editable": {
+					"type": "boolean",
+					"maxLength": 50
+				},
+				"default_val": {
+					"type": "string",
+					"maxLength": 50
+				}
+			},
+			"required": ["title", "fld_desc", "fld_type", "fld_size", "sequence", "validation", "editable", "default_val"]
+		}
+	},
+
+	"type": "object",
+	"patternProperties": {
+		"^[a-zA-Z]+$": {
+			"type": "object",
+			"properties": {
+				"header": {
+					"$ref": "#/definitions/header"
+				},
+				"ref_fields": {
+					"type": "object",
+					"patternProperties": {
+						"^[a-z]+$": {
+							"$ref": "#/definitions/fields"
+						}
+					}
+				},
+				"additional_fields": {
+					"type": "object",
+					"patternProperties": {
+						"^[a-z]+$": {
+							"$ref": "#/definitions/fields"
+						}
+					}
+				}
+			},
+			"required": ["header", "ref_fields", "additional_fields"]
+		}
+	}
+}

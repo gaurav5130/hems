@@ -1,0 +1,3 @@
+C1,E1,tax_category_type,general,General Tax Category
+C1,E1,tax_category_type,bar,Bar Tax Category
+C1,E1,tax_category_type,special,Special Tax Category

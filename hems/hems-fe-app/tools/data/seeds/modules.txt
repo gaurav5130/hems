@@ -1,0 +1,2 @@
+admin,Admin Module,Placeholder for documentation,ADM,true,false,true
+setup,Set Up Module,Placeholder for documentation,SET,true,false,true

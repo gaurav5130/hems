@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-lg-12">
+		<h2 class="page-header">
+		    {{title}}
+		</h2>
+    </div>
+</div>
+
+<div class="row _info_hidden">
+    <div class="col-lg-12"> 
+		<div class="alert alert-dismissable" id="_info_div">
+		  	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<i class="fa fa-info-circle"></i>&nbsp;<span class="_info_span"></span>
+		</div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+  	<form ng-submit="submit()" class= 'form-horizontal'>
+
+      <div class="form-group">
+        <label for="facility_code">Facility Code</label>
+        <input class="form-control" ng-model="form.facility_code" placeholder="Enter Facility Code" type="text" id="facility_code" />
+      </div>
+
+      <div class="form-group">
+        <label for="item_tax_category_code">Item Tax Category Code</label>
+        <input class="form-control" ng-model="form.item_tax_category_code" placeholder="Enter Item Tax Category Code" type="text" id="item_tax_category_code" />
+      </div>
+
+      <div class="form-group">
+        <label for="tax_code">Tax Code</label>
+        <input class="form-control" ng-model="form.tax_code" placeholder="Enter Tax Code" type="text" id="tax_code" />
+      </div>
+
+      <input type="submit" ng-click="Submit" id="btnSubmit" value="Submit" class="btn btn-primary" data-disable-with="Submit" />
+      <a class="btn btn-primary" ng-click="back()">Back</a>
+	</form>
+  </div>
+</div>

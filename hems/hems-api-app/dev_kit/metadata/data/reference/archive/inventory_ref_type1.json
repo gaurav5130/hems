@@ -1,0 +1,24 @@
+{
+	"inventory": {
+		"header": {
+			"title": "Inventory Items",
+			"description": "Inventory References",
+			"category":"restaurant",
+			"overridden_fields": true,
+			"additional_fields": false
+		},
+		"ref_fields": {
+			"alt_desc": {
+				"title":"Alternate Description",
+				"fld_desc": "alternate desciption",
+				"fld_type": "string",
+				"fld_size": 300,
+				"sequence":1,
+				"validation": "",
+				"editable": true,
+				"default_val": ""
+			}
+		},
+		"additional_fields":{}
+	}
+}

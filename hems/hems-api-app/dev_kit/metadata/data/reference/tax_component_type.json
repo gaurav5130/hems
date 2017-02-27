@@ -1,0 +1,13 @@
+{
+	"tax_component_type": {
+		"header": {
+			"title": "Tax/Charge Component",
+			"description": "Tax/Charge Component Reference Codes",
+			"category":"taxes",
+			"overridden_fields": false,
+			"additional_fields": false
+		},
+		"ref_fields": {},
+		"additional_fields": {}
+	}
+}

@@ -1,0 +1,22 @@
+Figaro.require_keys(
+	"app_name",
+	"db_dummy_dbname",
+	"db_metadata_dbname",
+	"db_metadata_schema_name",
+	"db_metadata_host",
+	"db_metadata_port",
+	"db_metadata_user_name",
+	"db_metadata_user_pwd",
+	"db_establishment_dbname",
+	"db_establishment_schema_name",
+	"db_establishment_host",
+	"db_establishment_port",
+	"db_establishment_user_name",
+	"db_establishment_user_pwd",
+	"db_e_ho_dbname",
+	"db_e_ho_schema_name",
+	"db_e_ho_host",
+	"db_e_ho_port",
+	"db_e_ho_user_name",
+	"db_e_ho_user_pwd"
+)

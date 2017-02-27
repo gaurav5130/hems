@@ -1,0 +1,10 @@
+<% content_for :side_nav do %>
+
+<li class="active">
+    <a href="<%=auth.edit_user_registration_path%>"><i class="fa fa-fw fa-gear"></i> Settings</a>
+</li>
+<li>
+    <a href="<%=auth.destroy_user_session_path%>"><i class="fa fa-fw fa-power-off"></i> Logout</a>
+</li>
+
+<% end %>

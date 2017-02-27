@@ -1,0 +1,13 @@
+{
+	"state_type": {
+		"header": {
+			"title": "States",
+			"description": "States Reference Codes",
+			"category":"taxes",
+			"overridden_fields": false,
+			"additional_fields": false
+		},
+		"ref_fields": {},
+		"additional_fields": {}
+	}
+}

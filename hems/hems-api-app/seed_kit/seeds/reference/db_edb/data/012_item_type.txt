@@ -1,0 +1,13 @@
+C1,E1,item_type,001,Dew
+C1,E1,item_type,002,Coke
+C1,E1,item_type,003,Pepsi
+C1,E1,item_type,004,Maaza
+C1,E1,item_type,005,Slice
+C1,E1,item_type,006,Coca Cola
+C1,E1,item_type,007,Paneer Butter Masala
+C1,E1,item_type,008,Chilli Manchurian
+C1,E1,item_type,009,Veg Biriyani
+C1,E1,item_type,010,Chicken Biriyani
+C1,E1,item_type,011,Imperial Blue
+C1,E1,item_type,012,Kingfisher Beer
+C1,E1,item_type,013,Hookah

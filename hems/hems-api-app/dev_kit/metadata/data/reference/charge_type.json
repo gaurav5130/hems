@@ -1,0 +1,13 @@
+{
+	"charge_type": {
+		"header": {
+			"title": "Charge Code",
+			"description": "Charge Reference Codes",
+			"category":"charges",
+			"overridden_fields": false,
+			"additional_fields": false
+		},
+		"ref_fields": {},
+		"additional_fields": {}
+	}
+}

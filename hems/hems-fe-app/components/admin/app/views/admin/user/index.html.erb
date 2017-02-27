@@ -1,0 +1,56 @@
+<%= render "admin/shared/page" %>
+
+<% content_for :page_header do %>
+
+<h2 class="page-header">
+    User List
+</h2>
+
+<% end %>
+
+<% content_for :page_body do %>
+
+<%= link_to 'Create User', admin_user_new_path, class: 'btn btn-primary _auth', 'data-access-key': 'admin.user_mgmt.create_user' %>
+
+<br>
+<br>
+
+<div class="row">
+	<div class="col-lg-9">
+	    <div class="table-responsive">
+	        <table class="table table-hover">
+	            <thead>
+	                <tr>
+	                    <th>Corporate Id</th>
+	                    <th>Establishment Id</th>
+	                    <th>User Id</th>
+	                    <th>User Name</th>
+	                    <th>Email</th>
+	                    <th>Role</th>
+	                    <th></th>
+	                    <th></th>
+	                    <th></th>
+	                </tr>
+	            </thead>
+
+	            <tbody>
+				    <% @users.each do |user| %>
+				      <tr>
+				        <td><%= user.corporate_id %></td>
+				        <td><%= user.establishment_id %></td>
+				        <td><%= user.user_id %></td>
+				        <td><%= user.user_name %></td>
+				        <td><%= user.email %></td>
+				        <td><%= user.role %></td>
+				        <td><%= link_to 'Show', admin_user_show_path(user), class: '_auth', 'data-access-key': 'admin.user_mgmt.show_user' %></td>
+				        <td><%= link_to 'Edit', admin_user_edit_path(user), class: '_auth', 'data-access-key': 'admin.user_mgmt.update_user' %></td>
+				        <td><%= link_to 'Delete', admin_user_destroy_path(user), method: :delete, class: '_auth', 'data-access-key': 'admin.user_mgmt.delete_user', data: { confirm: 'Are you sure?' } %></td>
+				      </tr>
+				    <% end %>
+	            </tbody>
+	        </table>
+	    </div>
+	</div>
+</div>
+
+<% end %>

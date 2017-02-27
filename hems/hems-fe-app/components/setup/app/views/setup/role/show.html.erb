@@ -1,0 +1,45 @@
+<%= render "setup/shared/page" %>
+
+################### Header Begins ###################
+<% content_for :page_header do %>
+
+<h2 class="page-header">
+  Show Role
+</h2>
+
+<% end %>
+################### Header Ends ###################
+
+################### Body Begins ###################
+<% content_for :page_body do %>
+
+<div class="row">
+  <div class="col-lg-6">
+    <%= form_for :role do |f| %>
+      <div class="form-group">
+        <%= f.label :corporate_id, 'Corporate Id' %>
+        <p class="form-control-static"><%= @role.corporate_id %></p>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :establishment_id, 'Establishment Id' %>
+        <p class="form-control-static"><%= @role.establishment_id %></p>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :code, 'Code' %>
+        <p class="form-control-static"><%= @role.code %></p>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :desc, 'Description' %>
+        <p class="form-control-static"><%= @role.desc %></p>
+      </div>
+
+      <%= link_to "Back", :back, class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>
+
+<% end %>
+################### Body Ends ###################

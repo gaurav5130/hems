@@ -1,0 +1,77 @@
+admin,root,root,root,root
+admin,user_mgmt,root,root,root
+admin,user_mgmt,list_users,List Users,Placeholder for documentation
+admin,user_mgmt,show_user,Show User,Placeholder for documentation
+admin,user_mgmt,create_user,Create User,Placeholder for documentation
+admin,user_mgmt,update_user,Update User,Placeholder for documentation
+admin,user_mgmt,delete_user,Delete User,Placeholder for documentation
+setup,root,root,root,root
+setup,auth_mgmt,root,root,root
+setup,role_mgmt,root,root,root
+setup,role_mgmt,list_roles,List Roles,Placeholder for documentation
+setup,role_mgmt,show_role,Show Role,Placeholder for documentation
+setup,role_mgmt,create_role,Create Role,Placeholder for documentation
+setup,role_mgmt,update_role,Update Role,Placeholder for documentation
+setup,role_mgmt,delete_role,Delete Role,Placeholder for documentation
+setup,role_group_mgmt,root,root,root
+setup,role_group_mgmt,list_role_groups,List Role Groups,Placeholder for documentation
+setup,role_group_mgmt,show_role_group,Show Role Group,Placeholder for documentation
+setup,role_group_mgmt,create_role_group,Create Role Group,Placeholder for documentation
+setup,role_group_mgmt,update_role_group,Update Role Group,Placeholder for documentation
+setup,role_group_mgmt,delete_role_group,Delete Role Group,Placeholder for documentation
+setup,role_access_mgmt,root,root,root
+setup,role_access_mgmt,set_role_access,Set Role Access,Placeholder for documentation
+setup,sale_items_mgmt,root,root,root
+setup,sale_items_mgmt,list_sale_items,List Sale Items,Placeholder for documentation
+setup,sale_items_mgmt,show_sale_item,Show Sale Item,Placeholder for doumentation
+setup,sale_items_mgmt,create_sale_item,Create Sale Item,Placeholder fo documentation
+setup,sale_items_mgmt,update_sale_item,Update Sale Item,Placeholder for ocumentation
+setup,sale_items_mgmt,delete_sale_item,Delete Sale Item,Placeholder for ocumentation
+setup,sale_items_mgmt,sales_item_list,Sales Item List,Placeholder for ocumentation
+setup,taxcharge_mgmt,root,root,root
+setup,taxcharge_code_mgmt,root,root,root
+setup,taxcharge_code_mgmt,list_taxcharge_codes,List Tax Charge Codes,Placeholder for documentation
+setup,taxcharge_code_mgmt,show_taxcharge_code,Show Tax Charge Code,Placeholder for documentation
+setup,taxcharge_code_mgmt,create_taxcharge_code,Create Tax Charge Code,Placeholder for documentation
+setup,taxcharge_code_mgmt,update_taxcharge_code,Update Tax Charge Code,Placeholder for documentation
+setup,taxcharge_code_mgmt,delete_taxcharge_code,Delete Tax Charge Code,Placeholder for documentation
+setup,taxcharge_component_mgmt,root,root,root
+setup,taxcharge_component_mgmt,list_taxcharge_components,List Tax Charge Components,Placeholder for documentation
+setup,taxcharge_component_mgmt,show_taxcharge_component,Show Tax Charge Component,Placeholder for documentation
+setup,taxcharge_component_mgmt,create_taxcharge_component,Create Tax Charge Component,Placeholder for documentation
+setup,taxcharge_component_mgmt,update_taxcharge_component,Update Tax Charge Component,Placeholder for documentation
+setup,taxcharge_component_mgmt,delete_taxcharge_component,Delete Tax Charge Component,Placeholder for documentation
+setup,facility_mgmt,root,root,root
+setup,facility_master_mgmt,root,root,root
+setup,facility_master_mgmt,list_facilities,List Facilities,Placeholder for documentation
+setup,facility_master_mgmt,show_facility,Show Facility,Placeholder for documentation
+setup,facility_master_mgmt,create_facility,Create Facility,Placeholder for documentation
+setup,facility_master_mgmt,update_facility,Update Facility,Placeholder for documentation
+setup,facility_master_mgmt,delete_facility,Delete Facility,Placeholder for documentation
+setup,facility_item_mgmt,root,root,root
+setup,facility_item_mgmt,list_facility_items,List Facility Items,Placeholder for documentation
+setup,facility_item_mgmt,show_facility_item,Show Facility Item,Placeholder for documentation
+setup,facility_item_mgmt,create_facility_item,Create Facility Item,Placeholder for documentation
+setup,facility_item_mgmt,update_facility_item,Update Facility Item,Placeholder for documentation
+setup,facility_item_mgmt,delete_facility_item,Delete Facility Item,Placeholder for documentation
+setup,facility_taxcode_mgmt,root,root,root
+setup,facility_taxcode_mgmt,list_facility_taxcodes,List Facility Tax Codes,Placeholder for documentation
+setup,facility_taxcode_mgmt,show_facility_taxcode,Show Facility Tax Code,Placeholder for documentation
+setup,facility_taxcode_mgmt,create_facility_taxcode,Create Facility Tax Code,Placeholder for documentation
+setup,facility_taxcode_mgmt,update_facility_taxcode,Update Facility Tax Code,Placeholder for documentation
+setup,facility_taxcode_mgmt,delete_facility_taxcode,Delete Facility Tax Code,Placeholder for documentation
+setup,reference_mgmt,root,root,root,root
+setup,reference_mgmt,list_ref_types,List Reference Types,Placeholder for documentation
+setup,reference_mgmt,get_ref_header,Get Reference Header,Placeholder for documentation
+setup,reference_mgmt,get_ref_fields,Get Reference Fields,Placeholder for documentation
+setup,reference_mgmt,list_ref_codes,List Reference Codes,Placeholder for documentation
+setup,reference_mgmt,show_ref_code,Show Reference Code,Placeholder for documentation
+setup,reference_mgmt,create_ref_code,Create Reference Code,Placeholder for documentation
+setup,reference_mgmt,update_ref_code,Update Reference Code,Placeholder for documentation
+setup,reference_mgmt,delete_ref_code,Delete Reference Code,Placeholder for documentation
+order,root,root,root,root
+order,order_mgmt,root,root,root
+order,order_mgmt,take_order,Take Order,Placeholder for documentation
+bill,root,root,root,root
+bill,bill_mgmt,root,root,root
+bill,bill_mgmt,prepare_bill,Prepare Bill,Placeholder for documentation

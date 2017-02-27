@@ -1,0 +1,75 @@
+{
+	"setup" : {
+		"header" : {
+			"title" : "Set Up Module"
+			,"desc" : "Placeholder for documentation"
+			,"base_module" : "true"
+			,"alias" : "SET"
+			,"migration_reqd" : "true"
+		}
+		,"auth" : {
+			"ignore_auth":"false"
+			,"allowed_roles":""
+		}
+		,"service_groups" : {
+			"auth_mgmt" : {
+				"title" : "Authorization Management"
+				,"desc" : "Placeholder for documentation"
+				,"services" : {
+				}
+			}
+			,"role_mgmt" : {
+				"title" : "Role Management"
+				,"desc" : "Placeholder for documentation"
+				,"services" : {
+					"list_roles" : {
+						"title" : "List Roles"
+						,"desc" : "Placeholder for documentation"
+					}
+					,"show_role" : {
+						"title" : "Show Role"
+						,"desc" : "Placeholder for documentation"			
+					}
+					,"create_role" : {
+						"title" : "Create Role"
+						,"desc" : "Placeholder for documentation"		
+					}
+					,"update_role" : {
+						"title" : "Update Role"
+						,"desc" : "Placeholder for documentation"		
+					}
+					,"delete_role" : {
+						"title" : "Delete Role"
+						,"desc" : "Placeholder for documentation"		
+					}
+				}
+			}
+			,"role_group_mgmt" : {
+				"title" : "Role Group Management"
+				,"desc" : "Placeholder for documentation"
+				,"services" : {
+					"list_role_groups" : {
+						"title" : "List Role Groups"
+						,"desc" : "Placeholder for documentation"
+					}
+					,"show_role_group" : {
+						"title" : "Show Role Group"
+						,"desc" : "Placeholder for documentation"			
+					}
+					,"create_role_group" : {
+						"title" : "Create Role Group"
+						,"desc" : "Placeholder for documentation"		
+					}
+					,"update_role_group" : {
+						"title" : "Update Role Group"
+						,"desc" : "Placeholder for documentation"		
+					}
+					,"delete_role_group" : {
+						"title" : "Delete Role Group"
+						,"desc" : "Placeholder for documentation"		
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"facility_type": {
+		"header": {
+			"title": "Facility Master",
+			"description": "Facility Master Reference Codes",
+			"category":"facility",
+			"overridden_fields": false,
+			"additional_fields": false
+		},
+		"ref_fields": {},
+		"additional_fields": {}
+	}
+}

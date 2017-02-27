@@ -1,0 +1,56 @@
+<%= render "setup/shared/page" %>
+
+<% content_for :page_header do %>
+
+<h2 class="page-header">
+    Role Group List
+</h2>
+
+<% end %>
+
+<% content_for :page_body do %>
+
+<%= link_to 'Create Role Group', setup_rolegroup_new_path, class: 'btn btn-primary _auth', 'data-access-key': 'setup.role_group_mgmt.create_role_group' %>
+
+<br>
+<br>
+
+<div class="row">
+	<div class="col-lg-9">
+	    <div class="table-responsive">
+	        <table class="table table-hover">
+	            <thead>
+	                <tr>
+	                    <th>Corporate Id</th>
+	                    <th>Establishment Id</th>
+	                    <th>Role Group</th>
+	                    <th>Description</th>
+	                    <th>Mapped Roles</th>
+	                    <th></th>
+	                    <th></th>
+	                    <th></th>
+	                </tr>
+	            </thead>
+
+	            <tbody>
+				    <% @roles.each do |role| 
+				    	role.user_roles.delete_if { |x| x.empty? }
+				    %>
+				      <tr>
+				        <td><%= role.corporate_id %></td>
+				        <td><%= role.establishment_id %></td>
+				        <td><%= role.code %></td>
+				        <td><%= role.desc %></td>
+				        <td><%= role.user_roles.join(", ") %></td>
+				        <td><%= link_to 'Show', setup_rolegroup_show_path(role), class: '_auth', 'data-access-key': 'setup.role_group_mgmt.show_role_group' %></td>
+				        <td><%= link_to 'Edit', setup_rolegroup_edit_path(role), class: '_auth', 'data-access-key': 'setup.role_group_mgmt.update_role_group' %></td>
+				        <td><%= link_to 'Delete', setup_rolegroup_destroy_path(role), method: :delete, class: '_auth', 'data-access-key': 'setup.role_group_mgmt.delete_role_group', data: { confirm: 'Are you sure?' } %></td>
+				      </tr>
+				    <% end %>
+	            </tbody>
+	        </table>
+	    </div>
+	</div>
+</div>
+
+<% end %>

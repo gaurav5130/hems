@@ -1,0 +1,13 @@
+{
+	"inventory_type": {
+		"header": {
+			"title": "Inventory",
+			"description": "Inventory Reference Codes",
+			"category":"inventory",
+			"overridden_fields": false,
+			"additional_fields": false
+		},
+		"ref_fields": {},
+		"additional_fields": {}
+	}
+}

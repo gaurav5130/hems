@@ -1,0 +1,104 @@
+<div align="center">
+	<div class= "name" align="center" style="border: 1px solid black;width:50%;padding: 5px;">
+		<span class="bold"> MY RESTAURANT </span>
+	</div>
+	<div id="billinfo" align="center" style="border: 1px solid black;width:50%;padding: 5px;line-height: 2.5;">
+		<span class="badge">Bill No : </span>
+		<span class="billlabelval">{{billNumber}}</span>
+		<span class="badge">STEWARD : </span><span class="billlabelval">{{steward}}</span></span>
+		<span class="badge">WAITOR : </span><span class="billlabelval">{{waitor}}</span></span>
+		<span class="badge">MEMBER ID :</span><span class="billlabelval">{{member_id}}</span>
+		<span class="badge right">DATE : </span><span class="billlabelval right">{{billDate | date:'dd/MM/yyyy'}}</span></span>
+		<br>
+	</div>
+	<div id="billingdata" align="center" style="width:50%;">
+		<table class="table table-hover" frame="box" width="100%">
+			<thead>
+				<tr>
+					<th>Item</th>
+					<th>Quantity</th>
+					<th>Rate</th>
+					<!-- <th>Discount</th>
+					<th>Discount Type</th> -->
+					<th class="right">Amount</th>
+				</tr>	
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in items">
+					<td>{{item.title}}</td>
+					<td>{{item.quantity | number:0}}</td>
+					<td>{{item.rate_per_unit}}</td>
+					<!-- <td><input type="text" ng-model="item.discount" size="3" value="0" class="disonitem"></td>
+					<td>
+						<select ng-model="item.disType">
+							<option value="rupee">Rupee</option>
+							<option value="percentage">Percentage</option>
+						</select>
+					</td> -->
+					<td class="right">{{item.invoice_amount | number:2}}</td>
+				</tr>
+				<tr>
+					<td class="bold">GROSS</td>
+					<!-- <td></td>
+					<td></td> -->
+					<td></td>
+					<td></td>
+					<td class="right">{{ getGrossTotal() | number:2}}</td>
+				</tr>
+				<tr>
+					<td class="bold">CHARGES</td>
+					<!-- <td></td>
+					<td></td> -->
+					<td></td>
+					<td></td>
+					<td class="right">{{charges | number:2}}</td>
+				</tr>
+
+				<tr>
+					<td class="bold">TAXES</td>
+					<!-- <td></td>
+					<td></td> -->
+					<td></td>
+					<td></td>
+					<td  class="right">{{taxes | number:2}}</td>
+				</tr>
+				<!-- <tr>
+				<td class="bold">SUB TOTAL</td> -->
+					<!-- <td></td>
+					<td></td> -->
+					<!-- <td></td>
+					<td></td>
+					<td  class="right">{{ getSubTotal() | number:2}}</td>{{calBill()}}
+				</tr> -->
+				<tr>
+					<td class="bold"><span>DISCOUNT</span></td>
+					<!-- <td></td>
+					<td></td> -->
+					<td><input type="text" id="discount" ng-model="billDis" maxlength="20" size="3" value=0 ></td>
+					<td>
+						<select ng-model="billdisType" class="form-control">
+							<option value="rupee">Rupee</option>
+							<option value="percentage">Percentage</option>
+						</select>
+					</td>
+					<td class="right"><span>{{billDis | number:2}}</span></td>
+				</tr>
+				<tr>
+					<td class="bold"><span>TOTAL</span></td>
+					<!-- <td></td>
+					<td></td> -->
+					<td></td>
+					<td></td>
+					<td class="right"><span class="bold">{{ getTotal() | number:2 }}</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="col-md-8">
+		<button id="singlebutton" name="singlebutton" ng-click="recalBill()" class="btn btn-primary">Recalculate Bill</button>
+	</div>
+	<div class="col-md-8">
+		<button id="singlebutton" name="singlebutton" ng-click="deleteBill()" class="btn btn-primary">Delete Bill</button>
+	</div>
+</div>

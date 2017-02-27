@@ -1,0 +1,4 @@
+admin,Admin Module,Placeholder for documentation,ADM,true,false,true
+setup,Set Up Module,Placeholder for documentation,SET,true,false,true
+order,Order Module,Placeholder for documentation,ORD,true,false,true
+bill,Billing Module,Placeholder for documentation,BILL,true,false,true

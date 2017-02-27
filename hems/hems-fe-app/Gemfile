@@ -1,0 +1,82 @@
+source 'https://rubygems.org'
+
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
+end
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '~> 5.0.1'
+# Use jdbcpostgresql as the database for Active Record
+gem 'activerecord-jdbcpostgresql-adapter'
+# Use Puma as the app server
+gem 'puma', '~> 3.0'
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 5.0'
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+# Use CoffeeScript for .coffee assets and views
+gem 'coffee-rails', '~> 4.2'
+# See https://github.com/rails/execjs#readme for more supported runtimes
+gem 'therubyrhino'
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.5'
+# Use ActiveModel has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
+
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
+
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#Application Specific Changes - Starts
+
+ruby '2.3.1', :engine => 'jruby', :engine_version => '9.1.7.0'
+
+gem 'activerecord-jdbc-adapter', github: 'jruby/activerecord-jdbc-adapter', branch: 'rails-5'
+gem 'bootstrap-sass'
+gem 'devise'
+gem 'figaro'
+gem 'jwt'
+gem 'pundit'
+gem 'virtus'
+
+path "components" do
+
+	# Base Engines - Mandatory #
+	gem "admin"
+	gem "auth"
+	gem "core"
+	gem "home"
+	gem "metamodel"
+	gem "setup"
+	gem "webui"
+	#gem "shared"
+
+	# Functional Engines #
+	gem "reference"
+	gem "items"
+	gem "tax_charge"
+	gem "facility"
+	gem "order"
+	gem "bill"
+end
+
+group :development do
+	gem 'annotate'
+	gem 'better_errors'
+
+	path "devkit" do
+		gem "metadata"
+	end
+end
+
+gem "angular-rails-templates"
+gem 'jquery-ui-rails' #Used Take Order
+
+#Application Specific Changes - Ends
+

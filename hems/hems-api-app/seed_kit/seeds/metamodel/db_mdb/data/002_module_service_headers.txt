@@ -1,0 +1,16 @@
+admin,user_mgmt,User Management,Placeholder for documentation
+setup,auth_mgmt,Authorization Management,Placeholder for documentation
+setup,role_mgmt,Role Management,Placeholder for documentation
+setup,role_group_mgmt,Role Group Management,Placeholder for documentation
+setup,role_access_mgmt,Role Access Management,Placeholder for documentation
+setup,sale_items_mgmt,Sale Item Management,Placeholder for documentation
+setup,taxcharge_mgmt,Tax & Charge Management,Placeholder for documentation
+setup,taxcharge_code_mgmt,Tax & Charge Code Management,Placeholder for documentation
+setup,taxcharge_component_mgmt,Tax & Charge Component Management,Placeholder for documentation
+setup,facility_mgmt,Facility Management,Placeholder for documentation
+setup,facility_master_mgmt,Facility Master Management,Placeholder for documentation
+setup,facility_item_mgmt,Facility Item Management,Placeholder for documentation
+setup,facility_taxcode_mgmt,Facility Tax Code Management,Placeholder for documentation
+setup,reference_mgmt,Reference Code Management,Placeholder for documentation
+order,order_mgmt,Order Management,Placeholder for documentation
+bill,bill_mgmt,Bill Management,Placeholder for documentation

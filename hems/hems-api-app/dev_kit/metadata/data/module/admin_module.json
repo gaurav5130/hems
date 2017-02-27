@@ -1,0 +1,43 @@
+{
+	"admin" : {
+		"header" : {
+			"title" : "Admin Module"
+			,"desc" : "Placeholder for documentation"
+			,"base_module" : "true"
+			,"alias" : "ADM"
+			,"migration_reqd" : "true"
+		}
+		,"auth" : {
+			"ignore_auth":"false"
+			,"allowed_roles":""
+		}
+		,"service_groups" : {
+			"user_mgmt" : {
+				"title" : "User Management"
+				,"desc" : "Placeholder for documentation"
+				,"services" : {
+					"list_users" : {
+						"title" : "List Users"
+						,"desc" : "Placeholder for documentation"
+					}
+					,"show_user" : {
+						"title" : "Show User"
+						,"desc" : "Placeholder for documentation"			
+					}
+					,"create_user" : {
+						"title" : "Create User"
+						,"desc" : "Placeholder for documentation"		
+					}
+					,"update_user" : {
+						"title" : "Update User"
+						,"desc" : "Placeholder for documentation"		
+					}
+					,"delete_user" : {
+						"title" : "Delete User"
+						,"desc" : "Placeholder for documentation"		
+					}
+				}
+			}
+		}
+	}
+}

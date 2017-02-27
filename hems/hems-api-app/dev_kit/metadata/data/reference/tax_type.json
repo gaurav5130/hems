@@ -1,0 +1,13 @@
+{
+	"tax_type": {
+		"header": {
+			"title": "Tax Code",
+			"description": "Tax Reference Codes",
+			"category":"taxes",
+			"overridden_fields": false,
+			"additional_fields": false
+		},
+		"ref_fields": {},
+		"additional_fields": {}
+	}
+}

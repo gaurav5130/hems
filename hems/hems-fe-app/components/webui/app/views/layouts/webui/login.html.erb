@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HEMS</title>
+
+    <%= csrf_meta_tags %>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div>
+               <div class="panel-title text-center">
+                    <h1>Log In</h1>
+                    <hr />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="main-login flash-center">
+              <%= render "webui/shared/page_flash" %>
+          </div>
+        </div>
+
+    <%= yield :page_body %>
+
+    </div>
+
+    <%= render "webui/shared/app_assets" %>
+    <%= stylesheet_link_tag    "auth/application", media: "all" %>
+    <%= javascript_include_tag "auth/application" %>
+
+</body>
+
+<style type="text/css">
+    /*
+/* Created by Filipe Pina
+ * Specific styles of signin, register, component
+ */
+/*
+ * General styles
+ */
+
+body, html{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: #d3d3d3;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.main{
+    margin-top: 70px;
+}
+
+h1.title { 
+    font-size: 50px;
+    font-family: 'Passion One', cursive; 
+    font-weight: 400; 
+}
+
+hr{
+    width: 10%;
+    color: #fff;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+label{
+    margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.main-login{
+    background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.main-center{
+    margin-top: 30px;
+    margin: 0 auto;
+    max-width: 330px;
+    padding: 40px 40px;
+}
+
+.flash-center{
+    margin-top: 30px;
+    margin: 0 auto;
+    max-width: 330px;
+}
+
+.login-button{
+    margin-top: 5px;
+}
+
+.login-register{
+    font-size: 11px;
+    text-align: center;
+}
+    
+</style>
+
+</html>

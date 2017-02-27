@@ -1,0 +1,13 @@
+{
+	"outlet": {
+		"header": {
+			"title": "Outlet Master",
+			"description": "Outlet Master Reference Codes",
+			"category":"company",
+			"overridden_fields": false,
+			"additional_fields": false
+		},
+		"ref_fields": {},
+		"additional_fields": {}
+	}
+}

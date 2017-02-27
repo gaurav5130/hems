@@ -1,0 +1,12 @@
+<h2 class="page-header">
+    Reference Types
+</h2>
+
+<ul class="list-group" ng-repeat="(key, value) in list | groupBy: 'category'">
+	<span style="text-transform: capitalize;font-weight: 600;">{{ key }}</span>
+	<li style="list-style: none;" ng-repeat="reference in value">
+		<a href="#/{{reference.ref_type | lowerCase }}/home">
+			{{reference.title}}
+		</a>
+	</li>
+</ul>

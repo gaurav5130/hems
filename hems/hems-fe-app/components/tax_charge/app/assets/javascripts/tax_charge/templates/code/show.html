@@ -1,0 +1,50 @@
+<div class="row">
+    <div class="col-lg-12">
+		<h2 class="page-header">
+		    {{title}}
+		</h2>
+    </div>
+</div>
+
+<div class="row _info_hidden">
+    <div class="col-lg-12"> 
+    <div class="alert alert-dismissable" id="_info_div">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <i class="fa fa-info-circle"></i>&nbsp;<span class="_info_span"></span>
+    </div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+  	<form class= 'form-horizontal'>
+
+      <div class="form-group">
+        <label for="code">Tax/Charge Code</label>
+        <p class="form-control-static">{{form.code}}</p>
+      </div>
+
+      <div class="form-group">
+        <label for="serial_no">Serial No</label>
+        <p class="form-control-static">{{form.serial_no}}</p>
+      </div>
+
+      <div class="form-group">
+        <label for="component_id">Component ID</label>
+        <p class="form-control-static">{{form.component_id}}</p>
+      </div>
+
+      <div class="form-group">
+        <label for="short_name">Short Name</label>
+        <p class="form-control-static">{{form.short_name}}</p>
+      </div>
+
+      <div class="form-group">
+        <label for="long_name">Long Name</label>
+        <p class="form-control-static">{{form.long_name}}</p>
+      </div>
+
+      <a class="btn btn-primary" ng-click="back()">Back</a>
+	</form>
+  </div>
+</div>

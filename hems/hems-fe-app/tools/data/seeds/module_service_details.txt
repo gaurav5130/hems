@@ -1,0 +1,19 @@
+admin,user_mgmt,root,root,root
+admin,user_mgmt,list_users,List Users,Placeholder for documentation
+admin,user_mgmt,show_user,Show User,Placeholder for documentation
+admin,user_mgmt,create_user,Create User,Placeholder for documentation
+admin,user_mgmt,update_user,Update User,Placeholder for documentation
+admin,user_mgmt,delete_user,Delete User,Placeholder for documentation
+setup,auth_mgmt,root,root,root
+setup,role_mgmt,root,root,root
+setup,role_mgmt,list_roles,List Roles,Placeholder for documentation
+setup,role_mgmt,show_role,Show Role,Placeholder for documentation
+setup,role_mgmt,create_role,Create Role,Placeholder for documentation
+setup,role_mgmt,update_role,Update Role,Placeholder for documentation
+setup,role_mgmt,delete_role,Delete Role,Placeholder for documentation
+setup,role_group_mgmt,root,root,root
+setup,role_group_mgmt,list_role_groups,List Role Groups,Placeholder for documentation
+setup,role_group_mgmt,show_role_group,Show Role Group,Placeholder for documentation
+setup,role_group_mgmt,create_role_group,Create Role Group,Placeholder for documentation
+setup,role_group_mgmt,update_role_group,Update Role Group,Placeholder for documentation
+setup,role_group_mgmt,delete_role_group,Delete Role Group,Placeholder for documentation

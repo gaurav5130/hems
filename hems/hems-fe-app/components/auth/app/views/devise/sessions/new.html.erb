@@ -1,0 +1,61 @@
+<% content_for :page_body do %>
+
+<%
+
+cid = (params['cid'].blank?) ? "" : params['cid']
+eid = (params['eid'].blank?) ? "" : params['eid']
+
+%>
+
+<div class="row">
+    <div class="main-login main-center">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+            <div class="form-group">
+                <label for="name" class="cols-sm-2 control-label">Corporate Id</label>
+                <div class="cols-sm-10">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-group fa" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" name="user[corporate_id]" id="user_corporate_id"  placeholder="Enter your Corporate Id" value="<%=cid%>"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="name" class="cols-sm-2 control-label">Establishment Id</label>
+                <div class="cols-sm-10">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-building fa" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" name="user[establishment_id]" id="user_establishment_id"  placeholder="Enter your  Establishment Id" value="<%=eid%>"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="name" class="cols-sm-2 control-label">User Id</label>
+                <div class="cols-sm-10">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" name="user[user_id]" id="user_user_id"  placeholder="Enter your User Id"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="cols-sm-2 control-label">Password</label>
+                <div class="cols-sm-10">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                        <input type="password" class="form-control" name="user[password]" id="user_password"  placeholder="Enter your Password"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group ">
+                <input type="submit" name="commit" value="Login" data-disable-with="Login" class="btn btn-primary btn-lg btn-block login-button"/>
+            </div>
+        <% end %>
+    </div>
+</div>
+
+<% end %>

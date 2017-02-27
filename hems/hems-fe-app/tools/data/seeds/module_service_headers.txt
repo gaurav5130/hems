@@ -1,0 +1,4 @@
+admin,user_mgmt,User Management,Placeholder for documentation
+setup,auth_mgmt,Authorization Management,Placeholder for documentation
+setup,role_mgmt,Role Management,Placeholder for documentation
+setup,role_group_mgmt,Role Group Management,Placeholder for documentation

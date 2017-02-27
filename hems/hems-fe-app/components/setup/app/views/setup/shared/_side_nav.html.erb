@@ -1,0 +1,54 @@
+<% content_for :side_nav do %>
+
+<li class="active _auth" data-access-key="setup.auth_mgmt">
+	<a href="javascript:;" data-toggle="collapse" data-target="#roles">Authorizations <i class="fa fa-fw fa-caret-down"></i></a>
+	<ul id="roles" class="collapse">
+		<li class="_auth" data-access-key="setup.role_mgmt.list_roles">
+			<a href="<%=setup.setup_role_index_path%>">Manage Roles</a>
+		</li>
+		<li class="_auth" data-access-key="setup.role_group_mgmt.list_role_groups">
+			<a href="<%=setup.setup_rolegroup_index_path%>">Manage Role Groups</a>
+		</li>
+		<li  class="_auth" data-access-key="setup.role_access_mgmt.set_role_access">
+			<a href="<%=setup.setup_roleaccess_index_path%>">Manage Permissions</a>
+		</li>
+	</ul>
+</li>
+
+<li class="active _auth" data-access-key="setup.reference_mgmt.list_ref_types">
+    <a href="<%=reference.reference_index_path%>">Reference</a>
+</li>
+
+<li class="active _auth" data-access-key="setup.sale_items_mgmt.list_sale_items">
+    <a href="<%=items.items_index_path%>">Sale Items</a>
+</li>
+
+<li class="active _auth" data-access-key="setup.taxcharge_mgmt">
+	<a href="javascript:;" data-toggle="collapse" data-target="#taxcharge">Tax &amp; Charge <i class="fa fa-fw fa-caret-down"></i></a>
+	<ul id="taxcharge" class="collapse">
+		<li class="_auth" data-access-key="setup.taxcharge_code_mgmt.list_taxcharge_codes">
+			<a href="<%=tax_charge.taxcharge_code_path%>">Tax &amp; Charge Codes</a>
+		</li>
+		<li class="_auth" data-access-key="setup.taxcharge_component_mgmt.list_taxcharge_components">
+			<a href="<%=tax_charge.taxcharge_component_path%>">Tax &amp; Charge Components</a>
+		</li>
+	</ul>
+</li>
+
+<li class="active _auth" data-access-key="setup.facility_mgmt">
+	<a href="javascript:;" data-toggle="collapse" data-target="#facility">Facility <i class="fa fa-fw fa-caret-down"></i></a>
+	<ul id="facility" class="collapse">
+		<li class="_auth" data-access-key="setup.facility_master_mgmt.list_facilities">
+			<a href="<%=facility.facility_index_path%>">Manage Facility</a>
+		</li>
+		<li class="_auth" data-access-key="setup.facility_item_mgmt.list_facility_items">
+			<a href="<%=facility.facility_item_index_path%>">Facility Item Mapping</a>
+		</li>
+		<li class="_auth" data-access-key="setup.facility_taxcode_mgmt.list_facility_taxcodes">
+			<a href="<%=facility.facility_tax_code_index_path%>">Facility Tax Code Mapping</a>
+		</li>
+	</ul>
+</li>
+
+
+<% end %>

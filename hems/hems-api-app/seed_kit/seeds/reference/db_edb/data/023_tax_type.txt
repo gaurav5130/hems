@@ -1,0 +1,3 @@
+C1,E1,tax_type,TAX001,General Taxes
+C1,E1,tax_type,TAX002,Bar Taxes
+C1,E1,tax_type,TAX003,Special Taxes

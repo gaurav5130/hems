@@ -1,0 +1,2 @@
+C1,E1,state_type,KA,Karnataka
+C1,E1,state_type,TN,Tamilnadu

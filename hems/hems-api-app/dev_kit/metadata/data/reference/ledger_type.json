@@ -1,0 +1,13 @@
+{
+	"ledger_type": {
+		"header": {
+			"title": "Ledger",
+			"description": "Ledger Reference Codes",
+			"category":"accounts",
+			"overridden_fields": false,
+			"additional_fields": false
+		},
+		"ref_fields": {},
+		"additional_fields": {}
+	}
+}

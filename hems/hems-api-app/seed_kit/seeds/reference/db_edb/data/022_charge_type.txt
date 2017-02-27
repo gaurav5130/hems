@@ -1,0 +1,5 @@
+C1,E1,charge_type,CHRG001,Service Charge
+C1,E1,charge_type,CHRG002,Luxury Charge
+C1,E1,charge_type,CHRG003,Excise Duty
+C1,E1,charge_type,CHRG004,Membership Fee Penalty Charge
+C1,E1,charge_type,CHRG005,Maintenance Charges

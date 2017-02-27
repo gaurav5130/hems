@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="col-lg-12">
+		<h2 class="page-header">
+		    {{title}}
+		</h2>
+    </div>
+</div>
+
+<div class="row _info_hidden">
+    <div class="col-lg-12"> 
+		<div class="alert alert-dismissable" id="_info_div">
+		  	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<i class="fa fa-info-circle"></i>&nbsp;<span class="_info_span"></span>
+		</div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+  	<form ng-submit="submit()" class= 'form-horizontal'>
+
+      <div class="form-group">
+        <label for="facility_code">Facility Code</label>
+        <input class="form-control" ng-model="form.facility_code" placeholder="Enter Facility Code" type="text" id="facility_code" />
+      </div>
+
+      <div class="form-group">
+        <label for="short_desc">Short Desc</label>
+        <input class="form-control" ng-model="form.short_desc" placeholder="Enter Short Desc" type="text" id="short_desc" />
+      </div>
+
+      <div class="form-group">
+        <label for="long_desc">Long Desc</label>
+        <input class="form-control" ng-model="form.long_desc" placeholder="Enter Long Desc" type="text" id="long_desc" />
+      </div>
+
+      <div class="form-group">
+        <label for="bill_charge_code">Bill Charge Code</label>
+        <input class="form-control" ng-model="form.bill_charge_code" placeholder="Enter Bill Charge Code" type="text" id="bill_charge_code" />
+      </div>
+
+      <div class="form-group">
+        <label for="bill_charge_tax_code">Bill Charge Tax Code</label>
+        <input class="form-control" ng-model="form.bill_charge_tax_code" placeholder="Enter Bill Charge Tax Code" type="text" id="bill_charge_tax_code" />
+      </div>
+
+      <div class="form-group">
+        <label for="consolidate_tax_for_bill">Consolidate Tax</label>
+        <select class="form-control" id="consolidate_tax_for_bill" ng-model="form.consolidate_tax_for_bill" ng-options="(consolidate_tax_for_bill? 'Yes':'No') for consolidate_tax_for_bill in [true, false]">
+        </select>
+      </div>
+
+
+      <input type="submit" ng-click="Submit" id="btnSubmit" value="Submit" class="btn btn-primary" data-disable-with="Submit" />
+      <a class="btn btn-primary" ng-click="back()">Back</a>
+	</form>
+  </div>
+</div>

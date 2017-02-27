@@ -1,0 +1,5 @@
+C1,E1,facility_type,FAC001,A/C Restaurant
+C1,E1,facility_type,FAC002,Non A/C Restaurant
+C1,E1,facility_type,FAC003,Gym
+C1,E1,facility_type,FAC004,Party Hall
+C1,E1,facility_type,FAC005,Sports Shop

@@ -1,0 +1,48 @@
+{
+	"default_type": {
+		"header": {},
+		"ref_fields": {
+			"code": {
+				"title": "Code",
+				"fld_desc": "Code of Reference",
+				"fld_type": "string",
+				"fld_size": 20,
+				"sequence":1,
+				"validation": "",
+				"editable": true,
+				"default_val": ""
+			},
+			"desc": {
+				"title": "Description",
+				"fld_desc": "Description of Code",
+				"fld_type": "string",
+				"fld_size": 200,
+				"sequence":2,
+				"validation": "",
+				"editable": true,
+				"default_val": ""
+			},
+			"alt_desc": {
+				"title": "Alternate Description",
+				"fld_desc": "Alternate Description of code",
+				"fld_type": "string",
+				"fld_size": 200,
+				"sequence":3,
+				"validation": "",
+				"editable": true,
+				"default_val": ""
+			},
+			"short_desc": {
+				"title": "Short Description",
+				"fld_desc": "Short Description of Code",
+				"fld_type": "string",
+				"fld_size": 50,
+				"sequence":4,
+				"validation": "",
+				"editable": true,
+				"default_val": ""
+			}
+		},
+		"additional_fields": {}
+	}
+}

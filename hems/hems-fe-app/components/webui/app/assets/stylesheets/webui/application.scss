@@ -1,0 +1,11 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootstrap/theme";
+@import "font-awesome";
+@import "morris";
+@import "sb-admin";
+@import "core";
+
+// @import "../../../../../core/app/assets/stylesheets/core/application";

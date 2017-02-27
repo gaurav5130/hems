@@ -1,0 +1,51 @@
+<%= render "setup/shared/page" %>
+
+################### Header Begins ###################
+<% content_for :page_header do %>
+
+<h2 class="page-header">
+  Create Role Group
+</h2>
+
+<% end %>
+################### Header Ends ###################
+
+################### Body Begins ###################
+<% content_for :page_body do %>
+
+<div class="row">
+  <div class="col-lg-6">
+    <%= form_for @role, url: {action: "create"}, html: {method: :post } do |f| %>
+
+      <div class="form-group">
+        <%= f.label :corporate_id, 'Corporate Id' %>
+        <%= f.text_field :corporate_id, class: 'form-control', placeholder: 'Enter Corporate Id' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :establishment_id, 'Establishment Id' %>
+        <%= f.text_field :establishment_id, class: 'form-control', placeholder: 'Enter Establishment Id' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :code, 'Code' %>
+        <%= f.text_field :code, class: 'form-control', placeholder: 'Enter Role Group Code' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :desc, 'Description' %>
+        <%= f.text_field :desc, class: 'form-control', placeholder: 'Enter Role Group Description' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :user_roles, "Select Roles" %>
+        <%= f.collection_select(:user_roles, Auth::Role.apply_context(@context), :code, :desc,  {:include_blank => false}, {:class => 'form-control', :multiple => true}) %>
+      </div>
+
+      <%= f.submit "Create", class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>
+
+<% end %>
+################### Body Ends ###################

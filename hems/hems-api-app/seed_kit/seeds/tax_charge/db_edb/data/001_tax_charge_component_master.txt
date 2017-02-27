@@ -1,0 +1,11 @@
+C1,E1,CHRGCOMP001,C,P,1,S Charge @10%,Service Charge @10%,10,C,C,NFN,,,,,0,10000,,IN,KA
+C1,E1,CHRGCOMP002,C,P,1,Lux. Charge @20%,Luxury Charge @20%,20,C,C,NFN,,,,,0,10000,,IN,KA
+C1,E1,CHRGCOMP003,C,P,1,Exc. Duty @5%,Excise Duty @5%,5,C,C,NFN,,,,,0,10000,,IN,KA
+C1,E1,CHRGCOMP004,C,F,1,Mship Pnlty Charge @Rs. 200,Membership Penalty Charge @Rs. 200,200,C,C,NFN,,,,,0,10000,,IN,KA
+C1,E1,CHRGCOMP005,C,P,1,Maint Charge @10%,Maintenance Charge @10%,10,C,C,NFN,,,,,0,10000,,IN,KA
+C1,E1,TAXCOMP001,T,P,1,S Tax @5.6%,Service Tax @5.6%,5.6,C,C,NFN,,,,,0,10000,,IN,KA
+C1,E1,TAXCOMP002,T,P,1,VAT @14%,VAT @14%,14,C,C,NFN,,,,,0,10000,,IN,KA
+C1,E1,TAXCOMP003,T,P,1,SB Tax @0.2%,Swachh Bharath Tax @0.2%,0.2,C,C,NFN,,,,,0,10000,,IN,KA
+C1,E1,TAXCOMP004,T,P,1,KK Cess @0.2%,Krishi Kalyan Cess @0.2%,0.2,C,C,NFN,,,,,0,10000,,IN,KA
+C1,E1,TAXCOMP005,T,P,1,L Tax @10%,Luxury Tax @10%,10,C,C,NFN,,,,,0,10000,,IN,KA
+C1,E1,TAXCOMP006,T,P,1,S Tax @14%,Service Tax @14%,14,C,C,NFN,,,,,0,10000,,IN,KA

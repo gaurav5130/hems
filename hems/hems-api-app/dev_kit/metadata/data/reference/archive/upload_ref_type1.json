@@ -1,0 +1,35 @@
+{
+	"upload": {
+		"header": {
+			"title": "Upload",
+			"description": "Upload Refereneces",
+			"category":"backend",
+			"overridden_fields": true,
+			"additional_fields": true
+		},
+		"ref_fields": {
+			"desc": {
+				"title":"Description",
+				"fld_desc": "field description",
+				"fld_type": "string",
+				"fld_size": 255,
+				"sequence": 3,
+				"validation": "",
+				"editable": true,
+				"default_val": ""
+			}
+		},
+		"additional_fields": {
+			"format": {
+				"title":"Format",
+				"fld_desc": "format of file",
+				"fld_type": "string",
+				"fld_size": 50,
+				"sequence": 2,
+				"validation": "",
+				"editable": false,
+				"default_val": "pdf"
+			}
+		}
+	}
+}

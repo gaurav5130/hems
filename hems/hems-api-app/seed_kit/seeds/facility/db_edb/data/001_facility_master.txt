@@ -1,0 +1,5 @@
+C1,E1,FAC001,A/C Restaurant,A/C Restaurant,CHRG001,TAX002,true
+C1,E1,FAC002,Non A/C Restaurant,Non A/C Restaurant,,,true
+C1,E1,FAC003,Gym,Gym,CHRG004,TAX002,true
+C1,E1,FAC004,Party Hall,Party Hall,CHRG005,TAX002,true
+C1,E1,FAC005,Sports Shop,Sports Shop,,,true

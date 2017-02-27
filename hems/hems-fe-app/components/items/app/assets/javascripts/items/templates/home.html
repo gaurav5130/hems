@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-lg-12">
+		<h2 class="page-header">
+		    {{title}}
+		</h2>
+    </div>
+</div>
+
+<div class="row _info_hidden">
+    <div class="col-lg-12"> 
+		<div class="alert alert-dismissable" id="_info_div">
+		  	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<i class="fa fa-info-circle"></i>&nbsp;<span class="_info_span"></span>
+		</div>
+    </div>
+</div>
+
+<a class="btn btn-primary _auth" ng-click="newRow()" data-access-key="setup.sale_items_mgmt.create_sale_item">New Record</a>
+
+<br>
+<br>
+
+<div class="row">
+	<div class="col-lg-9">
+	    <div class="table-responsive">
+	        <table class="table table-hover">
+	            <thead>
+	                <tr>
+						<th>Item Code</th>
+						<th>Item Type</th>
+						<th>Short Name</th>
+						<th>Tax Category Code</th>
+	                    <th></th>
+	                    <th></th>
+	                    <th></th>
+	                </tr>
+	            </thead>
+
+	            <tbody>
+					<tr ng-repeat="row in list">
+						<td>{{row.item_code}}</td>
+						<td>{{row.item_type}}</td>		
+						<td> {{row.short_name}}</td>
+						<td> {{row.tax_category_code}}</td>
+				        <td><a class="_auth" data-access-key="setup.sale_items_mgmt.show_sale_item">Show</a></td>
+				        <td><a class="_auth" data-access-key="setup.sale_items_mgmt.update_sale_item" ng-click="editRow(row.id)" >Edit</a></td>
+				        <td><a class="_auth" data-access-key="setup.sale_items_mgmt.delete_sale_item">Delete</a></td>
+					</tr>
+	            </tbody>
+	        </table>
+	    </div>
+	</div>
+</div>

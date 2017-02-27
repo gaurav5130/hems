@@ -1,0 +1,16 @@
+<%= render "reference/shared/page" %>
+
+
+<% content_for :page_header do %>
+
+
+<% end %>
+
+<% content_for :page_body do %>
+
+<article ng-app="reference">
+	<div ng-view ng-init="viewLoad();"></div>
+</article>
+
+
+<% end %>

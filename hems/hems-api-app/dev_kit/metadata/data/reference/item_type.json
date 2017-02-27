@@ -1,0 +1,13 @@
+{
+	"item_type": {
+		"header": {
+			"title": "Item Master",
+			"description": "Item Master Reference Codes",
+			"category":"resources",
+			"overridden_fields": false,
+			"additional_fields": false
+		},
+		"ref_fields": {},
+		"additional_fields": {}
+	}
+}

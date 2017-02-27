@@ -1,0 +1,13 @@
+C1,E1,001,Consumable,Dew,Dew,general
+C1,E1,002,Consumable,Coke,Coke,general
+C1,E1,003,Consumable,Pepsi,pepsi,general
+C1,E1,004,Consumable,Maaza,Maaza,general
+C1,E1,005,Consumable,Slice,Slice,general
+C1,E1,006,Consumable,Coca Cola,Coca Cola,general
+C1,E1,007,Consumable,Paneer Butter Masala,Paneer Butter Masala,general
+C1,E1,008,Consumable,Chilli Manchurian,Chilli Manchurian,general
+C1,E1,009,Consumable,Veg Biriyani,Veg Biriyani,general
+C1,E1,010,Consumable,Chicken Biriyani,Chicken Biriyani,special
+C1,E1,011,Consumable,Imperial Blue,Imperial Blue,bar
+C1,E1,012,Consumable,Kingfisher Beer,Kingfisher Beer,bar
+C1,E1,013,Consumable,Hookah,Hookah,special

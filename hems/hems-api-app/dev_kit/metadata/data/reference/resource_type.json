@@ -1,0 +1,13 @@
+{
+	"resource_type": {
+		"header": {
+			"title": "Item Type",
+			"description": "Item Type Reference Codes",
+			"category":"resources",
+			"overridden_fields": false,
+			"additional_fields": false
+		},
+		"ref_fields": {},
+		"additional_fields": {}
+	}
+}
